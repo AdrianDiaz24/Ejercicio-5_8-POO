@@ -1,7 +1,7 @@
 
 
 
-open class Persona(val nombre: String, private val fechaNacimiento: String, val edad: Int) {
+open class Persona(val nombre: String, private val fechaNacimiento: String, val edad: Int = 0) {
 
     init {
         require(nombre.isNotBlank()) {throw IllegalArgumentException("El nombre no puede estar vacio")}
